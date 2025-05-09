@@ -1,4 +1,4 @@
-import { NotionRelation, NotionTitle, NotionSelectT, NotionCheckbox, NotionStatus, NotionMultiSelect, INotionRichText, NotionDateT } from '../notion/notion.types'
+import { INotionPropCheckbox, INotionPropDate, INotionPropMultiSelect, INotionPropRelation, INotionPropSelect, INotionPropStatus, INotionPropText, INotionPropTitle } from '../notion/notion.types'
 
 export type PlanTypeT = 'Group' | 'Activ.'
 export type PriorityT = '1' | '2' | '3' | '4' | '5'
@@ -14,17 +14,16 @@ export interface IActivity {
     // '(aux) Group Select.': string
     // Creation: string
     // Edition: string
-    id?: string
-    'Comment.': string
-    'Group Name': string
-    'Group Title': string
-    Activities?: NotionRelation[]
-    Name: NotionTitle
-    P: NotionSelectT<PriorityT>
-    Select: NotionCheckbox
-    Status: NotionStatus
-    Tags?: NotionMultiSelect
-    Type: NotionSelectT<PlanTypeT>
+    'Comment.': INotionPropText
+    // 'Group Name': unknown
+    // 'Group Title': unknown
+    Activities: INotionPropRelation
+    Name: INotionPropTitle
+    P: INotionPropSelect<PriorityT>
+    Select: INotionPropCheckbox
+    Status: INotionPropStatus
+    Tags: INotionPropMultiSelect<string>
+    Type: INotionPropSelect<PlanTypeT>
 }
 
 /**
@@ -32,19 +31,18 @@ export interface IActivity {
  * TODO: 2025-05-08 - ADD Description
  */
 export interface IPlan {
-    id?: string
-    "Name": NotionTitle
-    "Activity": NotionRelation
-    "Comment.": INotionRichText
+    Name: INotionPropTitle
+    Activity: INotionPropRelation
+    'Comment.': INotionPropText
     /**
      * TODO: 2025-05-06 - Check this!
      */
-    "Date": NotionDateT | Date
-    "P": NotionSelectT<PriorityT>
-    "Exec.s"?: NotionSelectT<ExecNumberT>
-    "Plan Group"?: NotionRelation
-    "Pomo.'s"?: NotionSelectT<PomoNumberT>
-    "Time boxes"?: NotionRelation
+    Date: INotionPropDate
+    P: INotionPropSelect<PriorityT>
+    "Exec.s": INotionPropSelect<ExecNumberT>
+    "Plan Group": INotionPropRelation
+    "Pomo.'s": INotionPropSelect<PomoNumberT>
+    "Time boxes": INotionPropRelation
     // "": any
     // "(aux) Activ. Comment": any
     // "(aux) Activ. Group": any

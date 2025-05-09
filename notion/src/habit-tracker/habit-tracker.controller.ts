@@ -2,7 +2,7 @@
 import { getDB, getDBRows, insertDbRows } from '../notion/notion.api'
 import { planMock01 } from './mocks/mock.plan'
 import { IActivity, IPlan } from './habit-tracker.types'
-import { DBQueryResultT, DBQueryFilterT, DbInsertResultTP, IPageResponse } from '../notion/notion.types'
+import { DBQueryResultT, DBQueryFilterT, DbInsertResultTP, INotionPage } from '../notion/notion.types'
 import { Notion } from '../notion/notion.classes'
 import dotenv from "dotenv"
 import { createPlanFromActivity } from './habit-tracker.utils'
@@ -16,9 +16,9 @@ dotenv.config()
  * TODO: 2025-05-08 - Check this typing
  * TODO: 2025-05-08 - Check this as a whole
  * 
- * @returns {Promise<IPageResponse<IActivity>[]>} Array of activities sorted by priority
+ * @returns {Promise<INotionPage<IActivity>[]>} Array of activities sorted by priority
  */
-export async function getSelectedActivities(): Promise<IPageResponse<IActivity>[]> {
+export async function getSelectedActivities(): Promise<INotionPage<IActivity>[]> {
 
     const filters: DBQueryFilterT = {
         filter: {
@@ -36,7 +36,7 @@ export async function getSelectedActivities(): Promise<IPageResponse<IActivity>[
     }
 
     const response = await getDBRows(Notion.getClient(), ID_DB_ACTIVITY, filters)
-    return response.results as IPageResponse<IActivity>[]
+    return response.results as INotionPage<IActivity>[]
 }
 
 
@@ -73,13 +73,13 @@ export async function planDayFromActivitiesSelection() {
 
     // Get activities
     /**
-     * TODO: 2025-05-08 - Undo this testing arrangement
+     * FIXME: 2025-05-08 - Undo this testing arrangement
      */
     // const activities = (await getSelectedActivities()).results
-    const activities_: IPageResponse<IActivity>[] = await getSelectedActivities()
+    const activities_: INotionPage<IActivity>[] = await getSelectedActivities()
     const activities = [ activities_[0] ]
     
     // Create plans
-    const plans: IPlan[] = activities.map(activity => createPlanFromActivity(activity))
+    const plans: INotionPage<IPlan>[] = activities.map(activity => createPlanFromActivity(activity))
     return await Promise.all(plans.map(plan => insertDbRows(Notion.getClient(), ID_DB_PLAN, plan)))
 }

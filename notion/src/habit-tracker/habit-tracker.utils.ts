@@ -1,7 +1,6 @@
 import { formatDate } from '../common/date'
-import { IPageResponse } from '../notion/notion.types'
+import { INotionPage } from '../notion/notion.types'
 import { IActivity, IPlan, PlanTypeT } from './habit-tracker.types'
-import { planMock01 } from './mocks/mock.plan'
 
 /**
  * Returns the standardized name for a plan.
@@ -19,7 +18,7 @@ export function getPlanName(activityName: string, type: PlanTypeT, date: Date): 
  * TODO: 2025-05-08 - Improve this
  * TODO: 2025-05-08 - ADD Description
  */
-export function createPlanFromActivity(activity: IPageResponse<IActivity>): IPlan {
+export function createPlanFromActivity(activity: INotionPage<IActivity>): INotionPage<IPlan> {
     throw new Error('Not implemented')
     // console.log({ activity: JSON.stringify(activity) })
     // return planMock01

@@ -7,30 +7,40 @@ export type DBQueryFilterT = Omit<Parameters<Client['databases']['query']>[0], '
 export type DBQueryResultT = Awaited<ReturnType<Client['databases']['query']>>
 export type DbInsertResultTP = Awaited<ReturnType<Client['pages']['create']>>
 
-export interface IPageResponse<PropsT = Record<string, Object>> {
-    archived: boolean
-    created_by: Object
-    created_time: string
-    id: string
-    last_edited_by: Object
-    last_edited_time: string
-    object: "page"
-    url: string
-    parent: {
-        type: "database_id"
-        database_id: string
-    } | {
-        type: "page_id"
-        page_id: string
-    } | {   
-        type: "block_id"
-        block_id: string
-    } | {
-        type: "workspace"
-        workspace: true
-    },
-    properties: PropsT
-}
+type NotionFileT = INotionHostedFile | INotionExternalFile
+type NotionIconT = NotionFileT | INotionEmoji
+type NotionUserTypeT = 'person' | 'bot'
+
+type NotionRichTextTypeT = "text" | "mention" | "equation"
+
+export type NotionColorT =
+    | 'blue'
+    | 'blue_background'
+    | 'brown'
+    | 'brown_background'
+    | 'default'
+    | 'gray'
+    | 'gray_background'
+    | 'green'
+    | 'green_background'
+    | 'orange'
+    | 'orange_background'
+    | 'pink'
+    | 'pink_background'
+    | 'purple'
+    | 'purple_background'
+    | 'red'
+    | 'red_background'
+    | 'yellow'
+    | 'yellow_background'
+ 
+type NotionMentionTypeT =
+    | 'database'
+    | 'date'
+    | 'link_preview'
+    | 'page'
+    | 'template_mention'
+    | 'user'
 
 export type NotionPropTypeT =
     | 'checkbox'
@@ -54,48 +64,167 @@ export type NotionPropTypeT =
     | 'title'
     | 'url'
 
+interface INotionPageAbstract<O extends 'page' | 'database', P extends Record<keyof P, INotionProp>> {
+    
+    readonly id?: string
+    object: O
 
+    archived: boolean
+    in_trash: boolean
 
+    properties: P
+    parent: INotionDatabaseParent
+    cover: NotionFileT | null
+    icon: NotionIconT
 
-
-export type NotionTitle = {
-    // title: Array<RichTextItemRequest>;
-    title: [
-        {
-            // "type": "text",
-            text?: {
-                content: string,
-                link?: string | null,
-            },
-            // "annotations": {
-            //     "bold": false,
-            //     "italic": false,
-            //     "strikethrough": false,
-            //     "underline": false,
-            //     "code": false,
-            //     "color": "default"
-            // },
-            plain_text: string,
-            href?: string | null,
-        }
-    ],
-    type?: 'title'
+    public_url: string | null
+    url: string
+    
+    created_by: INotionUser
+    created_time: string | Date
+    last_edited_by: INotionUser
+    last_edited_time: string | Date
 }
 
+export interface INotionPage<P extends Record<keyof P, INotionProp>> extends INotionPageAbstract<'page', P> {}
+
+export interface INotionDatabase< P extends Record<keyof P, INotionProp>> extends INotionPageAbstract<'database', P> {
+    title: INotionPropTitle
+    description: INotionRichText[]
+    is_inline: boolean
+}
+  
+export interface INotionHostedFile {
+    readonly type: 'file'
+    file: {
+        url: string
+        expiry_time: string | Date
+    }
+}
+
+export interface INotionExternalFile {
+    readonly type: 'external'
+    external: {
+        url: string
+    }
+}
+
+export interface INotionEmoji {
+    readonly type: 'emoji'
+    emoji: string
+}
+
+export interface INotionUser<T extends NotionUserTypeT = NotionUserTypeT> {
+    readonly object: 'user'
+    readonly id: string
+    readonly type?: T
+    readonly name?: string
+    readonly avatar_url?: string
+}
+
+export interface INotionPerson extends INotionUser<'person'> {  
+    person: {
+        email: string
+    }
+}
+
+export interface INotionWorkspaceBot extends INotionUser<'bot'> {
+    bot: {
+        owner: {
+            type: 'workspace'
+            workspace: true
+        }
+        workspace_name: string
+    }
+}
 
 /**
- * =================================================
- * =================================================
- * --- PROPERTIES
- * =================================================
- * =================================================
+ * REVIEW: 2025-05-08 - This typing is probably wrong
  */
-
-export interface INotionProp<T extends NotionPropTypeT> {
-    id: string
-    type: T
+export interface INotionUserBot extends INotionUser<'bot'> {
+    bot: {
+        owner: {
+            type: 'user'
+        }
+    }
 }
 
+export interface INotionDatabaseParent {
+    type: 'database_id'
+    database_id: string
+}
+
+export interface INotionPageParent {
+    type: 'page_id'
+    page_id: string
+}
+
+export interface INotionBlockParent {
+    type: 'block_id'
+    block_id: string
+}
+export interface INotionWorkspaceParent {
+    type: 'workspace'
+    workspace: true
+}
+
+export interface INotionRichText<T extends NotionRichTextTypeT = NotionRichTextTypeT, H extends string | null = string | null> {
+    type: T,
+    plain_text?: string
+    href?: H
+    annotations?: {
+        bold: boolean
+        italic: boolean
+        strikethrough: boolean
+        underline: boolean
+        code: boolean
+        color: NotionColorT
+    }
+}
+
+/**
+ * TODO: 2025-05-07 - ADD Description
+ */
+export interface INotionEquation extends INotionRichText<'equation', null> {
+    equation: {
+        expression: string
+    }
+}
+
+/**
+ * REVIEW: 2025-05-07 - Finish the typing of Mention types
+ * @see https://developers.notion.com/reference/rich-text#mention
+ */
+export interface INotionMention extends INotionRichText<'mention', string | null> {
+    mention: { type: NotionMentionTypeT  } & Record<NotionMentionTypeT, any>,
+}
+
+/**
+ * TODO: 2025-05-07 - ADD Description
+ */
+export interface INotionTextWithLink extends INotionRichText<'text', string> {
+    text: {
+        content: string,
+        link?: {
+            url: string
+        },
+    }
+}
+
+/**
+ * TODO: 2025-05-07 - ADD Description
+ */
+export interface INotionText extends INotionRichText<'text', null> {
+    text: {
+        content: string,
+        link?: null,
+    }
+}
+
+interface INotionProp<T extends NotionPropTypeT = NotionPropTypeT> {
+    readonly id?: string
+    type: T
+}
 
 /**
  * TODO: 2025-05-07 - ADD Description
@@ -108,10 +237,10 @@ export interface INotionPropTitle extends INotionProp<'title'> {
  * TODO: 2025-05-07 - ADD Description
  * @see https://developers.notion.com/reference/property-value-object#select-property-values
  */
-export interface INotionPropSelect extends INotionProp<'select'> {
+export interface INotionPropSelect<T extends string> extends INotionProp<'select'> {
     select: {
         id: string
-        name: string
+        name: T
         readonly color: NotionColorT
     }
 }
@@ -167,8 +296,8 @@ export interface INotionPropStatus extends INotionProp<'status'> {
  * TODO: 2025-05-07 - ADD Description
  * @see https://developers.notion.com/reference/property-value-object#multi-select-property-values
  */
-export interface INotionPropMultiSelect extends INotionProp<'multi_select'> {
-    multi_select: Array<INotionPropSelect['select']>
+export interface INotionPropMultiSelect<T extends string> extends INotionProp<'multi_select'> {
+    multi_select: INotionPropSelect<T>[]
 }
 
 export interface INotionPropText extends INotionProp<'rich_text'> {
@@ -189,204 +318,7 @@ export interface INotionPropRollup extends INotionProp<'rollup'> {
     }    
 }
 
-/**
- * =================================================
- * =================================================
- * --- PROPERTIES
- * =================================================
- * =================================================
- */
-
-
-/**
- * TODO: 2025-05-07 - ADD Description
- */
-export type NotionPropRichTextT<T extends NotionRichTextTypeT = 'text', H extends string | null = null> = {
-    rich_text: Array<INotionRichText<T, H>>
-}
-
-// export type NotionPropSelectT = {
-//     select: {
-//         name: string
-//     }
-// }
-
-type NotionRichTextTypeT = "text" | "mention" | "equation"
-
-type NotionColorT =
- | 'blue'
- | 'blue_background'
- | 'brown'
- | 'brown_background'
- | 'default'
- | 'gray'
- | 'gray_background'
- | 'green'
- | 'green_background'
- | 'orange'
- | 'orange_background'
- | 'pink'
- | 'pink_background'
- | 'purple'
- | 'purple_background'
- | 'red'
- | 'red_background'
- | 'yellow'
- | 'yellow_background'
- 
-type NotionMentionTypeT =
-    | 'database'
-    | 'date'
-    | 'link_preview'
-    | 'page'
-    | 'template_mention'
-    | 'user'
-
-export interface INotionRichText<T extends NotionRichTextTypeT, H extends string | null = null> {
-    type: T,
-    plain_text?: string
-    href?: H
-    annotations?: {
-        bold: boolean
-        italic: boolean
-        strikethrough: boolean
-        underline: boolean
-        code: boolean
-        color: NotionColorT
-    }
-}
-
-/**
- * TODO: 2025-05-07 - ADD Description
- */
-export interface INotionEquation extends INotionRichText<'equation', null> {
-    equation: {
-        expression: string
-    }
-}
-
-/**
- * TODO: 2025-05-07 - Finish the typing of Mention types
- * @see https://developers.notion.com/reference/rich-text#mention
- */
-export interface INotionMention extends INotionRichText<'mention', string | null> {
-    mention: { type: NotionMentionTypeT  } & Record<NotionMentionTypeT, any>,
-}
-
-/**
- * TODO: 2025-05-07 - ADD Description
- */
-export interface INotionTextWithLink extends INotionRichText<'text', string> {
-    text: {
-        content: string,
-        link?: {
-            url: string
-        },
-    }
-}
-
-/**
- * TODO: 2025-05-07 - ADD Description
- */
-export interface INotionText extends INotionRichText<'text', null> {
-    text: {
-        content: string,
-        link?: null,
-    }
-}
-
-
-
-
-
-
-export type NotionRelation = {
-    // relation: Array<{ id: IdRequest }>
-    id?: string,
-    relation: { id: string } | Array<{ id: string }>
-    type?: 'relation',
-    // has_more: boolean
-}
-
-
-
-
-export type NotionNumber = {
-    number: number | null
-    type?: 'number'
-}
-
-export type NotionSelectT<NameT = string> = {
-    select: {
-        // id: StringRequest;
-        // name?: StringRequest;
-        // color?: SelectColor;
-        id: string
-        name?: NameT
-        color?: string
-    } | null | {
-        // name: StringRequest;
-        // id?: StringRequest;
-        // color?: SelectColor;
-        name: NameT
-        id?: string
-        color?: string
-    } | null;
-    type?: "select";
-}
-
-export type NotionDateT = {
-    id?: string,
-    date: null | {
-        start: string | Date;
-        end?: string | null;
-        // time_zone?: TimeZoneRequest | null;
-        time_zone?: string | null;
-    },
-    type?: "date",
-}
-
-export type NotionCheckbox = {
-    checkbox: boolean
-    type?: 'checkbox'
-}
-
-
-export type NotionStatus = {
-    status: {
-        // id: StringRequest;
-        // name?: StringRequest;
-        // color?: SelectColor;
-        id: string
-        name?: string
-        color?: string
-    } | null | {
-        // name: StringRequest;
-        // id?: StringRequest;
-        // color?: SelectColor;
-        name: string
-        id?: string
-        color?: string
-    } | null;
-    type?: 'status'
-}
-
-
-export type NotionMultiSelect = {
-    multi_select: Array<{
-        // id: StringRequest;
-        // name?: StringRequest;
-        // color?: SelectColor;
-        id: string
-        name?: string
-        color?: string
-    } | {
-        // name: StringRequest;
-        // id?: StringRequest;
-        // color?: SelectColor;
-        name: string
-        id?: string
-        color?: string
-    }>;
-    type?: 'multi_select'
+export interface INotionPropFile {
+    readonly type: 'file'
+    file: INotionHostedFile | INotionExternalFile
 }
