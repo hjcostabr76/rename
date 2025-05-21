@@ -3,9 +3,19 @@ import Client from '@notionhq/client/build/src/Client'
 /**
  * TODO: 2025-05-03 - ADD Description
  */
-export type DBQueryFilterT = Omit<Parameters<Client['databases']['query']>[0], 'database_id' | 'auth'>
-export type DBQueryResultT = Awaited<ReturnType<Client['databases']['query']>>
-export type DbInsertResultTP = Awaited<ReturnType<Client['pages']['create']>>
+export type NotionDbQueryFilterT = Omit<Parameters<Client['databases']['query']>[0], 'database_id' | 'auth'>
+
+/**
+ * REVIEW: 2025-05-21 - Check this
+ * TODO: 2025-05-21 - ADD Description
+ */
+export type NotionDbQueryResultT = Awaited<ReturnType<Client['databases']['query']>>
+
+/**
+ * REVIEW: 2025-05-21 - Check this
+ * TODO: 2025-05-21 - ADD Description
+ */
+export type NotionDbInsertResultTP = Awaited<ReturnType<Client['pages']['create']>>
 
 type NotionFileT = INotionHostedFile | INotionExternalFile
 type NotionIconT = NotionFileT | INotionEmoji
@@ -14,25 +24,25 @@ type NotionUserTypeT = 'person' | 'bot'
 type NotionRichTextTypeT = "text" | "mention" | "equation"
 
 export type NotionColorT =
-    | 'blue'
     | 'blue_background'
-    | 'brown'
+    | 'blue'
     | 'brown_background'
+    | 'brown'
     | 'default'
-    | 'gray'
     | 'gray_background'
-    | 'green'
+    | 'gray'
     | 'green_background'
-    | 'orange'
+    | 'green'
     | 'orange_background'
-    | 'pink'
+    | 'orange'
     | 'pink_background'
-    | 'purple'
+    | 'pink'
     | 'purple_background'
-    | 'red'
+    | 'purple'
     | 'red_background'
-    | 'yellow'
+    | 'red'
     | 'yellow_background'
+    | 'yellow'
  
 type NotionMentionTypeT =
     | 'database'
