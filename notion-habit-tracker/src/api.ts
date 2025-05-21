@@ -1,6 +1,7 @@
 import express, { Response } from 'express'
-import { planDayFromActivitiesSelection, createPlan, getSelectedActivities, getPlans, getPlanDB } from './habit-tracker.controller'
-import { API_PORT } from './habit-tracker.constants'
+import { planDayFromActivitiesSelection, createPlan, getPlans, getPlanDB } from './modules/plan/plan.controller'
+import { API_PORT } from './global/global.constants'
+import { getSelectedActivities } from './modules/activity/activity.controller'
 
 const app = express()
 
@@ -13,6 +14,9 @@ app.get('/activities', async (req, res: Response) => {
     res.send(activities)
 })
 
+/**
+ * REVIEW: 2025-05-21 - Think of a better endpoint for it
+ */
 app.get('/plan', async (req, res: Response) => {
     const planDb = await getPlanDB()
     res.send(planDb)
