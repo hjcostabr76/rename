@@ -1,0 +1,681 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "1e09fd15-896b-8143-9075-d38018fee063",
+            "created_time": "2025-04-25T03:29:00.000Z",
+            "last_edited_time": "2025-05-03T12:49:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "cover": null,
+            "icon": {
+                "type": "external",
+                "external": {
+                    "url": "https://www.notion.so/icons/circle_yellow.svg"
+                }
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e09fd15-896b-8065-8e27-d680c259543d"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(err) Parent": {
+                    "id": "%3C%5Ca%7C",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Group P": {
+                    "id": "%3D%5B%40Y",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "57a22624-4836-4997-8db3-91e61fc77924",
+                                    "name": "2",
+                                    "color": "orange"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Comment.": {
+                    "id": "%40HT%3A",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Error Warn": {
+                    "id": "CERO",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Tags": {
+                    "id": "KCgV",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "": {
+                    "id": "OKSY",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "🔅×1"
+                    }
+                },
+                "Plans": {
+                    "id": "Rmwz",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-80a0-93fb-f62f348c3f30"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Activities": {
+                    "id": "SigY",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Status": {
+                    "id": "X%3COr",
+                    "type": "status",
+                    "status": {
+                        "id": "cb15f9bd-2124-4089-8aaa-f3e06d7f2b3a",
+                        "name": "active",
+                        "color": "blue"
+                    }
+                },
+                "(err) Incomp.": {
+                    "id": "%5E%5D%5D%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Type": {
+                    "id": "_c%3FL",
+                    "type": "select",
+                    "select": {
+                        "id": "b9f28d91-4b12-4d08-a179-18830360a76f",
+                        "name": "Activ.",
+                        "color": "purple"
+                    }
+                },
+                "Creation": {
+                    "id": "dKJ%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-25T03:29:00.000Z"
+                },
+                "People": {
+                    "id": "dNvC",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "P": {
+                    "id": "f%3AS%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "57a22624-4836-4997-8db3-91e61fc77924",
+                        "name": "2",
+                        "color": "orange"
+                    }
+                },
+                "Edition": {
+                    "id": "hQWC",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T12:49:00.000Z"
+                },
+                "Group Title": {
+                    "id": "i%5Cxk",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "🟠 2 | Iron Maiden"
+                    }
+                },
+                "Select": {
+                    "id": "orJj",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "(aux) Group Select.": {
+                    "id": "pFSR",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "number",
+                        "number": 1,
+                        "function": "checked"
+                    }
+                },
+                "Events": {
+                    "id": "ql%60h",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "(err) Naming": {
+                    "id": "yh%7C_",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Group": {
+                    "id": "%7C~k%5B",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-8171-84f4-e17f05369d71"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Inst.s": {
+                    "id": "~%7ChI",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[act] Activity 06",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[act] Activity 06",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/act-Activity-06-1e09fd15896b81439075d38018fee063",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e09fd15-896b-8171-84f4-e17f05369d71",
+            "created_time": "2025-04-25T03:29:00.000Z",
+            "last_edited_time": "2025-05-03T13:31:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "cover": null,
+            "icon": {
+                "type": "external",
+                "external": {
+                    "url": "https://www.notion.so/icons/circle-alternate_yellow.svg"
+                }
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e09fd15-896b-8065-8e27-d680c259543d"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(err) Parent": {
+                    "id": "%3C%5Ca%7C",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Group P": {
+                    "id": "%3D%5B%40Y",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Comment.": {
+                    "id": "%40HT%3A",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Error Warn": {
+                    "id": "CERO",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Tags": {
+                    "id": "KCgV",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "": {
+                    "id": "OKSY",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "🔅×1; 📝×4"
+                    }
+                },
+                "Plans": {
+                    "id": "Rmwz",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-80c9-a5df-f22815932cb2"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Activities": {
+                    "id": "SigY",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-8152-9732-d2812687ed33"
+                        },
+                        {
+                            "id": "1e09fd15-896b-81ef-baf4-c1f75c792d13"
+                        },
+                        {
+                            "id": "1e09fd15-896b-8143-9075-d38018fee063"
+                        },
+                        {
+                            "id": "1e09fd15-896b-8189-9add-f6d73ade6ef3"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Status": {
+                    "id": "X%3COr",
+                    "type": "status",
+                    "status": {
+                        "id": "cb15f9bd-2124-4089-8aaa-f3e06d7f2b3a",
+                        "name": "active",
+                        "color": "blue"
+                    }
+                },
+                "(err) Incomp.": {
+                    "id": "%5E%5D%5D%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Type": {
+                    "id": "_c%3FL",
+                    "type": "select",
+                    "select": {
+                        "id": "0cadb4a6-170f-4704-bc83-adbf0901f52a",
+                        "name": "Group",
+                        "color": "red"
+                    }
+                },
+                "Creation": {
+                    "id": "dKJ%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-25T03:29:00.000Z"
+                },
+                "People": {
+                    "id": "dNvC",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "P": {
+                    "id": "f%3AS%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "57a22624-4836-4997-8db3-91e61fc77924",
+                        "name": "2",
+                        "color": "orange"
+                    }
+                },
+                "Edition": {
+                    "id": "hQWC",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T13:31:00.000Z"
+                },
+                "Group Title": {
+                    "id": "i%5Cxk",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "🔘 Groups"
+                    }
+                },
+                "Select": {
+                    "id": "orJj",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "(aux) Group Select.": {
+                    "id": "pFSR",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "number",
+                        "number": 0,
+                        "function": "checked"
+                    }
+                },
+                "Events": {
+                    "id": "ql%60h",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "(err) Naming": {
+                    "id": "yh%7C_",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Group": {
+                    "id": "%7C~k%5B",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Inst.s": {
+                    "id": "~%7ChI",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[grp] Iron Maiden",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[grp] Iron Maiden",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/grp-Iron-Maiden-1e09fd15896b817184f4e17f05369d71",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e09fd15-896b-8152-9732-d2812687ed33",
+            "created_time": "2025-04-25T03:29:00.000Z",
+            "last_edited_time": "2025-05-03T12:49:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "cover": null,
+            "icon": {
+                "type": "external",
+                "external": {
+                    "url": "https://www.notion.so/icons/circle_yellow.svg"
+                }
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e09fd15-896b-8065-8e27-d680c259543d"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(err) Parent": {
+                    "id": "%3C%5Ca%7C",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Group P": {
+                    "id": "%3D%5B%40Y",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "57a22624-4836-4997-8db3-91e61fc77924",
+                                    "name": "2",
+                                    "color": "orange"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Comment.": {
+                    "id": "%40HT%3A",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Error Warn": {
+                    "id": "CERO",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Tags": {
+                    "id": "KCgV",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "": {
+                    "id": "OKSY",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Plans": {
+                    "id": "Rmwz",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activities": {
+                    "id": "SigY",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Status": {
+                    "id": "X%3COr",
+                    "type": "status",
+                    "status": {
+                        "id": "cb15f9bd-2124-4089-8aaa-f3e06d7f2b3a",
+                        "name": "active",
+                        "color": "blue"
+                    }
+                },
+                "(err) Incomp.": {
+                    "id": "%5E%5D%5D%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Type": {
+                    "id": "_c%3FL",
+                    "type": "select",
+                    "select": {
+                        "id": "b9f28d91-4b12-4d08-a179-18830360a76f",
+                        "name": "Activ.",
+                        "color": "purple"
+                    }
+                },
+                "Creation": {
+                    "id": "dKJ%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-25T03:29:00.000Z"
+                },
+                "People": {
+                    "id": "dNvC",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "P": {
+                    "id": "f%3AS%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "33c6dc18-4f64-464a-ab12-e13fac40c0e5",
+                        "name": "4",
+                        "color": "green"
+                    }
+                },
+                "Edition": {
+                    "id": "hQWC",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T12:49:00.000Z"
+                },
+                "Group Title": {
+                    "id": "i%5Cxk",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "🟠 2 | Iron Maiden"
+                    }
+                },
+                "Select": {
+                    "id": "orJj",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "(aux) Group Select.": {
+                    "id": "pFSR",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "number",
+                        "number": 1,
+                        "function": "checked"
+                    }
+                },
+                "Events": {
+                    "id": "ql%60h",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "(err) Naming": {
+                    "id": "yh%7C_",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Group": {
+                    "id": "%7C~k%5B",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-8171-84f4-e17f05369d71"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Inst.s": {
+                    "id": "~%7ChI",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[act] Activity 04",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[act] Activity 04",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/act-Activity-04-1e09fd15896b81529732d2812687ed33",
+            "public_url": null
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page_or_database",
+    "page_or_database": {},
+    "request_id": "c8dd8ff0-455b-4f1e-b769-59a10848ef5f"
+}
