@@ -1,0 +1,5038 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "1e69fd15-896b-807a-993b-e8b70989939d",
+            "created_time": "2025-05-01T00:52:00.000Z",
+            "last_edited_time": "2025-05-03T02:12:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02)  -"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗missing_activity;\n❗missing_plan_type;\n❗missing_priority;\n❗missing_estimate.s;\n❗unset_estimate_type;"
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": null
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-05-01T00:52:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:12:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": null
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02)  - ",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02)  - ",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-1e69fd15896b807a993be8b70989939d",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-80a1-9c9c-e19fd9d61e6e",
+            "created_time": "2025-04-26T20:06:00.000Z",
+            "last_edited_time": "2025-05-03T02:12:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02)  -"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗missing_activity;\n❗missing_plan_type;\n❗missing_priority;\n❗missing_estimate.s;\n❗unset_estimate_type;"
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": null
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T20:06:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:12:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": null
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02)  - ",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02)  - ",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-1e19fd15896b80a19c9ce19fd9d61e6e",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-8057-8cf4-f69bc0302226",
+            "created_time": "2025-04-26T18:20:00.000Z",
+            "last_edited_time": "2025-05-03T02:12:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02)  -"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗missing_activity;\n❗missing_plan_type;\n❗missing_estimate.s;\n❗unset_estimate_type;"
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": null
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T18:20:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment.",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗invalid_name"
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:12:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "43e2adea-c27b-4366-8574-91757491c3d6",
+                        "name": "p1",
+                        "color": "red"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Activ. - Activity 07",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Activ. - Activity 07",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Activ-Activity-07-1e19fd15896b80578cf4f69bc0302226",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-808f-ad5c-c1f44f3f9587",
+            "created_time": "2025-04-26T18:20:00.000Z",
+            "last_edited_time": "2025-05-03T02:16:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02) Activ. - Activity 09"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "formula",
+                                "formula": {
+                                    "type": "string",
+                                    "string": "Group"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "i?uc",
+                                    "name": "🍅 03",
+                                    "color": "brown"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "8516e096-1555-4fb7-a9b7-ba96a6d9f06b",
+                                    "name": "p4",
+                                    "color": "red"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-80ae-a77c-f1f46eff8632"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activ."
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activity 09"
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "relation",
+                                "relation": [
+                                    {
+                                        "id": "1e09fd15-896b-8184-8131-eb49210ca01c"
+                                    }
+                                ]
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": {
+                        "id": "i?uc",
+                        "name": "🍅 03",
+                        "color": "brown"
+                    }
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T18:20:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "b9f28d91-4b12-4d08-a179-18830360a76f",
+                                    "name": "Activ.",
+                                    "color": "purple"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Pomodoros"
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment.",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:16:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "06623413-aab0-495d-bf03-e6ad6a1bcc43",
+                                    "name": "3",
+                                    "color": "yellow"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-81a6-a140-c9541f8569a0"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[3]"
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "b32269ca-52bd-40b4-bd3b-828b0aa498a0",
+                        "name": "p3",
+                        "color": "yellow"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Activ. - Activity 09",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Activ. - Activity 09",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Activ-Activity-09-1e19fd15896b808fad5cc1f44f3f9587",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-8019-b000-eab570808622",
+            "created_time": "2025-04-26T18:20:00.000Z",
+            "last_edited_time": "2025-05-03T02:14:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02) Activ. - Activity 08"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "formula",
+                                "formula": {
+                                    "type": "string",
+                                    "string": "Group"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "i?uc",
+                                    "name": "🍅 03",
+                                    "color": "brown"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "8516e096-1555-4fb7-a9b7-ba96a6d9f06b",
+                                    "name": "p4",
+                                    "color": "red"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-80ae-a77c-f1f46eff8632"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activ."
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activity 08"
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "relation",
+                                "relation": [
+                                    {
+                                        "id": "1e09fd15-896b-8184-8131-eb49210ca01c"
+                                    }
+                                ]
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": {
+                        "id": "^?Xr",
+                        "name": "🍅 02",
+                        "color": "brown"
+                    }
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T18:20:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "b9f28d91-4b12-4d08-a179-18830360a76f",
+                                    "name": "Activ.",
+                                    "color": "purple"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Pomodoros"
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment.",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:14:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "57a22624-4836-4997-8db3-91e61fc77924",
+                                    "name": "2",
+                                    "color": "orange"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-813e-9d53-c7d6ec74d5ee"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[2]"
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "43e2adea-c27b-4366-8574-91757491c3d6",
+                        "name": "p1",
+                        "color": "red"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Activ. - Activity 08",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Activ. - Activity 08",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Activ-Activity-08-1e19fd15896b8019b000eab570808622",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-8058-a88f-cf9f7a237a51",
+            "created_time": "2025-04-26T18:20:00.000Z",
+            "last_edited_time": "2025-05-03T02:21:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02) Activ. - Activity 02"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "formula",
+                                "formula": {
+                                    "type": "string",
+                                    "string": "Group"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "KsEA",
+                                    "name": "🍅 05",
+                                    "color": "brown"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "d5584080-679f-472d-90dd-25b83b09f750",
+                                    "name": "p2",
+                                    "color": "orange"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-80a2-a939-c90ec2516897"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activ."
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activity 02"
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "relation",
+                                "relation": [
+                                    {
+                                        "id": "1e09fd15-896b-8171-919d-f7ea0898826d"
+                                    }
+                                ]
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": {
+                        "id": "UmYB",
+                        "name": "🍅 01",
+                        "color": "brown"
+                    }
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T18:20:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "b9f28d91-4b12-4d08-a179-18830360a76f",
+                                    "name": "Activ.",
+                                    "color": "purple"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Pomodoros"
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment.",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:21:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "f943c1a9-7023-4794-a2b2-47e864ef858c",
+                                    "name": "-",
+                                    "color": "default"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-81ca-9d44-ff057a1591e2"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "b32269ca-52bd-40b4-bd3b-828b0aa498a0",
+                        "name": "p3",
+                        "color": "yellow"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Activ. - Activity 02",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Activ. - Activity 02",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Activ-Activity-02-1e19fd15896b8058a88fcf9f7a237a51",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-8078-ab68-f96e68fc8c73",
+            "created_time": "2025-04-26T18:20:00.000Z",
+            "last_edited_time": "2025-05-03T02:12:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02) Activ. - Activity 05"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "formula",
+                                "formula": {
+                                    "type": "string",
+                                    "string": "Group"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "UmYB",
+                                    "name": "🍅 01",
+                                    "color": "brown"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "43e2adea-c27b-4366-8574-91757491c3d6",
+                                    "name": "p1",
+                                    "color": "red"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-80c9-a5df-f22815932cb2"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activ."
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activity 05"
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "relation",
+                                "relation": [
+                                    {
+                                        "id": "1e09fd15-896b-8171-84f4-e17f05369d71"
+                                    }
+                                ]
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": {
+                        "id": "UmYB",
+                        "name": "🍅 01",
+                        "color": "brown"
+                    }
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T18:20:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "b9f28d91-4b12-4d08-a179-18830360a76f",
+                                    "name": "Activ.",
+                                    "color": "purple"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Pomodoros"
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment. ",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment. ",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "◻️",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "◻️",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:12:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "06623413-aab0-495d-bf03-e6ad6a1bcc43",
+                                    "name": "3",
+                                    "color": "yellow"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-81ef-baf4-c1f75c792d13"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[3]"
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "d5584080-679f-472d-90dd-25b83b09f750",
+                        "name": "p2",
+                        "color": "orange"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Activ. - Activity 05",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Activ. - Activity 05",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Activ-Activity-05-1e19fd15896b8078ab68f96e68fc8c73",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-80a0-93fb-f62f348c3f30",
+            "created_time": "2025-04-26T18:20:00.000Z",
+            "last_edited_time": "2025-05-03T02:23:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02) Activ. - Activity 06"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "formula",
+                                "formula": {
+                                    "type": "string",
+                                    "string": "Group"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "UmYB",
+                                    "name": "🍅 01",
+                                    "color": "brown"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "43e2adea-c27b-4366-8574-91757491c3d6",
+                                    "name": "p1",
+                                    "color": "red"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-80c9-a5df-f22815932cb2"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activ."
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activity 06"
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "relation",
+                                "relation": [
+                                    {
+                                        "id": "1e09fd15-896b-8171-84f4-e17f05369d71"
+                                    }
+                                ]
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": {
+                        "id": "UmYB",
+                        "name": "🍅 01",
+                        "color": "brown"
+                    }
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T18:20:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "b9f28d91-4b12-4d08-a179-18830360a76f",
+                                    "name": "Activ.",
+                                    "color": "purple"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Pomodoros"
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment. ",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment. ",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "🔹",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "🔹",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:23:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "57a22624-4836-4997-8db3-91e61fc77924",
+                                    "name": "2",
+                                    "color": "orange"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-8143-9075-d38018fee063"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[2]"
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "d5584080-679f-472d-90dd-25b83b09f750",
+                        "name": "p2",
+                        "color": "orange"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Activ. - Activity 06",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Activ. - Activity 06",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Activ-Activity-06-1e19fd15896b80a093fbf62f348c3f30",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-800f-a49f-d30b01e7fd14",
+            "created_time": "2025-04-26T18:20:00.000Z",
+            "last_edited_time": "2025-05-03T02:24:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02) Activ. - Activity 03"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "formula",
+                                "formula": {
+                                    "type": "string",
+                                    "string": "Group"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "KsEA",
+                                    "name": "🍅 05",
+                                    "color": "brown"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "d5584080-679f-472d-90dd-25b83b09f750",
+                                    "name": "p2",
+                                    "color": "orange"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-80a2-a939-c90ec2516897"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activ."
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activity 03"
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "relation",
+                                "relation": [
+                                    {
+                                        "id": "1e09fd15-896b-8171-919d-f7ea0898826d"
+                                    }
+                                ]
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": {
+                        "id": "2c2e6d20-2574-4ac1-80bf-f35a438ae8bd",
+                        "name": "5×",
+                        "color": "gray"
+                    }
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": null
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T18:20:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "b9f28d91-4b12-4d08-a179-18830360a76f",
+                                    "name": "Activ.",
+                                    "color": "purple"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Executions"
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment.",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:24:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "f943c1a9-7023-4794-a2b2-47e864ef858c",
+                                    "name": "-",
+                                    "color": "default"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-8156-ba82-fbc051185db7"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "ed1224bd-2842-4292-93cd-e13f5537cbc8",
+                        "name": "p5",
+                        "color": "gray"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Activ. - Activity 03",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Activ. - Activity 03",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Activ-Activity-03-1e19fd15896b800fa49fd30b01e7fd14",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-8074-abfe-ff78bc5efdb5",
+            "created_time": "2025-04-26T18:20:00.000Z",
+            "last_edited_time": "2025-05-03T02:16:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02) Activ. - Activity 02"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "formula",
+                                "formula": {
+                                    "type": "string",
+                                    "string": "Group"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "KsEA",
+                                    "name": "🍅 05",
+                                    "color": "brown"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "d5584080-679f-472d-90dd-25b83b09f750",
+                                    "name": "p2",
+                                    "color": "orange"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-80a2-a939-c90ec2516897"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activ."
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Activity 02"
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "relation",
+                                "relation": [
+                                    {
+                                        "id": "1e09fd15-896b-8171-919d-f7ea0898826d"
+                                    }
+                                ]
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": {
+                        "id": "0346aa17-aafe-4439-aa37-7d5490591808",
+                        "name": "1×",
+                        "color": "brown"
+                    }
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": null
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T18:20:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "b9f28d91-4b12-4d08-a179-18830360a76f",
+                                    "name": "Activ.",
+                                    "color": "purple"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Executions"
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment.",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:16:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "f943c1a9-7023-4794-a2b2-47e864ef858c",
+                                    "name": "-",
+                                    "color": "default"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-81ca-9d44-ff057a1591e2"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "8516e096-1555-4fb7-a9b7-ba96a6d9f06b",
+                        "name": "p4",
+                        "color": "red"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Activ. - Activity 02",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Activ. - Activity 02",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Activ-Activity-02-1e19fd15896b8074abfeff78bc5efdb5",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-808a-904a-ec6ed3772b3b",
+            "created_time": "2025-04-26T18:20:00.000Z",
+            "last_edited_time": "2025-05-03T02:12:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02)  -"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗missing_activity;\n❗missing_plan_type;\n❗missing_estimate.s;\n❗unset_estimate_type;"
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": null
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T18:20:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment.",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗invalid_name"
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:12:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "b32269ca-52bd-40b4-bd3b-828b0aa498a0",
+                        "name": "p3",
+                        "color": "yellow"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Activ. - Activity 01",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Activ. - Activity 01",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Activ-Activity-01-1e19fd15896b808a904aec6ed3772b3b",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-80c9-a5df-f22815932cb2",
+            "created_time": "2025-04-26T18:20:00.000Z",
+            "last_edited_time": "2025-05-03T02:12:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02) Group - Iron Maiden"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Group"
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Iron Maiden"
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "relation",
+                                "relation": []
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": {
+                        "id": "UmYB",
+                        "name": "🍅 01",
+                        "color": "brown"
+                    }
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-8078-ab68-f96e68fc8c73"
+                        },
+                        {
+                            "id": "1e19fd15-896b-80a0-93fb-f62f348c3f30"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T18:20:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "0cadb4a6-170f-4704-bc83-adbf0901f52a",
+                                    "name": "Group",
+                                    "color": "red"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Pomodoros"
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗ 🔸×2;"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment. ",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment. ",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "🟠 🔶 🔘",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "🟠 🔶 🔘",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:12:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "🔘 Groups"
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "57a22624-4836-4997-8db3-91e61fc77924",
+                                    "name": "2",
+                                    "color": "orange"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-8171-84f4-e17f05369d71"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[2]"
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "43e2adea-c27b-4366-8574-91757491c3d6",
+                        "name": "p1",
+                        "color": "red"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Group - Iron Maiden",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Group - Iron Maiden",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Group-Iron-Maiden-1e19fd15896b80c9a5dff22815932cb2",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-80a2-a939-c90ec2516897",
+            "created_time": "2025-04-26T18:20:00.000Z",
+            "last_edited_time": "2025-05-03T02:24:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02) Group - Elis Reginasddd"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Group"
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Elis Reginasddd"
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "relation",
+                                "relation": []
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": {
+                        "id": "KsEA",
+                        "name": "🍅 05",
+                        "color": "brown"
+                    }
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-8058-a88f-cf9f7a237a51"
+                        },
+                        {
+                            "id": "1e19fd15-896b-8074-abfe-ff78bc5efdb5"
+                        },
+                        {
+                            "id": "1e19fd15-896b-800f-a49f-d30b01e7fd14"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T18:20:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "0cadb4a6-170f-4704-bc83-adbf0901f52a",
+                                    "name": "Group",
+                                    "color": "red"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Pomodoros"
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗ 🔸×3;"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment. ",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment. ",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "🔵 🌕",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "🔵 🌕",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:24:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "🔘 Groups"
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "06623413-aab0-495d-bf03-e6ad6a1bcc43",
+                                    "name": "3",
+                                    "color": "yellow"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-8171-919d-f7ea0898826d"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[3]"
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "d5584080-679f-472d-90dd-25b83b09f750",
+                        "name": "p2",
+                        "color": "orange"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Group - Elis Reginasddd",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Group - Elis Reginasddd",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Group-Elis-Reginasddd-1e19fd15896b80a2a939c90ec2516897",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1e19fd15-896b-80ae-a77c-f1f46eff8632",
+            "created_time": "2025-04-26T03:12:00.000Z",
+            "last_edited_time": "2025-05-03T02:24:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ad2fab30-247b-4325-9a3f-da184a89020b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "00000000-0000-0000-0000-000000000003"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "1e19fd15-896b-8008-b50e-e21a5844ce71"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "(aux) Name": {
+                    "id": "%3AMlB",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[plan] (25-05-02) Group - Led Zeppelin"
+                    }
+                },
+                "(err) Incompl.": {
+                    "id": "%3CE%3Dn",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Error Warn": {
+                    "id": "%3CZgv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗"
+                    }
+                },
+                "(aux) Parent Type": {
+                    "id": "JpYG",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Pomo.s": {
+                    "id": "KVOf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group P": {
+                    "id": "OMyw",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Activ. Comment": {
+                    "id": "Pq%40t",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "(err) Parent Relation": {
+                    "id": "RD~i",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗activ_group_mismatch;"
+                    }
+                },
+                "Plan Group": {
+                    "id": "Txwd",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Plan Type": {
+                    "id": "V%5C%5DK",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Group"
+                    }
+                },
+                "Plan Activ. Name": {
+                    "id": "VgvW",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Led Zeppelin"
+                    }
+                },
+                "(aux) Activ. Group": {
+                    "id": "WH%60K",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "relation",
+                                "relation": []
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "(aux) Parent Group": {
+                    "id": "XMlJ",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "Exec.s": {
+                    "id": "X~uD",
+                    "type": "select",
+                    "select": null
+                },
+                "Pomo.'s": {
+                    "id": "%5DOPv",
+                    "type": "select",
+                    "select": {
+                        "id": "i?uc",
+                        "name": "🍅 03",
+                        "color": "brown"
+                    }
+                },
+                "Plan Activities": {
+                    "id": "b%3Fvt",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e19fd15-896b-8019-b000-eab570808622"
+                        },
+                        {
+                            "id": "1e19fd15-896b-808f-ad5c-c1f44f3f9587"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Creation": {
+                    "id": "cr_%5C",
+                    "type": "created_time",
+                    "created_time": "2025-04-26T03:12:00.000Z"
+                },
+                "(aux) Activ. type": {
+                    "id": "cwhf",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "0cadb4a6-170f-4704-bc83-adbf0901f52a",
+                                    "name": "Group",
+                                    "color": "red"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Date": {
+                    "id": "gL%40f",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Estimate Type": {
+                    "id": "hGDv",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "Pomodoros"
+                    }
+                },
+                "": {
+                    "id": "iU%7CI",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "❗ 🔸×2;"
+                    }
+                },
+                "Comment.": {
+                    "id": "lYWW",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TODO",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": true,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": "TODO",
+                            "href": null
+                        },
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": ": ADD Comment.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": true,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "gray"
+                            },
+                            "plain_text": ": ADD Comment.",
+                            "href": null
+                        }
+                    ]
+                },
+                "(err) Naming": {
+                    "id": "mG%3Eb",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "Edition": {
+                    "id": "p%5DAM",
+                    "type": "last_edited_time",
+                    "last_edited_time": "2025-05-03T02:24:00.000Z"
+                },
+                "(aux) Plan Group Title": {
+                    "id": "paue",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "🔘 Groups"
+                    }
+                },
+                "(err) Group Estimate Type": {
+                    "id": "uuWx",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": ""
+                    }
+                },
+                "(aux) Activ. P": {
+                    "id": "v%3FYy",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [
+                            {
+                                "type": "select",
+                                "select": {
+                                    "id": "883dce1f-9b0d-49a7-9f60-a04820d1e1b9",
+                                    "name": "5",
+                                    "color": "blue"
+                                }
+                            }
+                        ],
+                        "function": "show_original"
+                    }
+                },
+                "Time boxes": {
+                    "id": "xCDa",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Activity": {
+                    "id": "y%5B%3FQ",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "1e09fd15-896b-8184-8131-eb49210ca01c"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Info.": {
+                    "id": "z%60%3E%3B",
+                    "type": "formula",
+                    "formula": {
+                        "type": "string",
+                        "string": "[5]"
+                    }
+                },
+                "P": {
+                    "id": "zvU%3A",
+                    "type": "select",
+                    "select": {
+                        "id": "8516e096-1555-4fb7-a9b7-ba96a6d9f06b",
+                        "name": "p4",
+                        "color": "red"
+                    }
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "[plan] (25-05-02) Group - Led Zeppelin",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "[plan] (25-05-02) Group - Led Zeppelin",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/plan-25-05-02-Group-Led-Zeppelin-1e19fd15896b80aea77cf1f46eff8632",
+            "public_url": null
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page_or_database",
+    "page_or_database": {},
+    "request_id": "9c3d3ff4-7896-426f-89e5-64e2de0f8030"
+}

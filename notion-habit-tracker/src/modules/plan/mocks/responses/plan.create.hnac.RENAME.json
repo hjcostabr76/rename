@@ -1,0 +1,38 @@
+{
+    "parent": {
+        "type": "database_id",
+        "database_id": "1e19fd15896b8008b50ee21a5844ce71"
+    },
+    "properties": {
+        "Activity": {
+            "relation": [
+                {
+                    "id": "1e09fd15-896b-8143-9075-d38018fee063"
+                }
+            ]
+        },
+        "Comment.": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": ""
+                    },
+                    "plain_text": ""
+                }
+            ]
+        },
+        "Date": "2025-05-07T12:24:04.220Z",
+        "Name": {
+            "type": "title",
+            "title": [
+                {
+                    "text": {
+                        "content": "[plan] (25-05-03) Activ. - Activity ______",
+                        "link": null
+                    }
+                }
+            ]
+        },
+    }
+}

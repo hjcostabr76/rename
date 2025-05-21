@@ -1,0 +1,54 @@
+{
+    "parent": {
+        "type": "database_id",
+        "database_id": "1e19fd15896b8008b50ee21a5844ce71"
+    },
+    "properties": {
+        "Activity": {
+            "relation": [
+                {
+                    "id": "1e09fd15-896b-8143-9075-d38018fee063"
+                }
+            ]
+        },
+        "Comment.": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "[api] test 02"
+                    },
+                    "plain_text": "[api] test 02"
+                }
+            ]
+        },
+        "Date": {
+            "type": "date",
+            "date": {
+                "start": "2025-05-07T12:22:48.543Z",
+                "end": null,
+                "time_zone": null
+            }
+        },
+        "Exec.s": {
+            "select": {
+                "name": "1×"
+            }
+        },
+        "Name": {
+            "title": [
+                {
+                    "text": {
+                        "content": "[api] New Test 02"
+                    },
+                    "plain_text": "[api] New Test 02"
+                }
+            ]
+        },
+        "P": {
+            "select": {
+                "name": "2"
+            }
+        }
+    }
+}
